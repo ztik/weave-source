@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap';
+* {
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #eee;
+    scrollbar-width: none;
+    font-family: montserrat, sans-serif
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.content__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
+}
+
+.content__title h1 {
+    font-family: 'm plus rounded 1c';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 92px;
+    letter-spacing: .13em;
+    text-indent: .13em;
+    text-align: left;
+    text-transform: uppercase
+}
+
+.content__title p {
+    position: relative;
+    bottom: 30px;
+    font-family: 'm plus rounded 1c';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-indent: 0;
+    color: #ff5f1b
+}
+
+.content__social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.content__social ul span {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.content__social li {
+    display: inline
+}
+
+.content__social li a {
+    text-decoration: none;
+    color: #8f8f8f;
+    font-family: Montserrat;
+    font-weight: 900;
+    transition: all .5s ease
+}
+
+.content__social li a:hover {
+    color: #ff5f1b;
+    transition: all .5s ease
+}
+
+@media(max-width:500px) {
+    .content__title h1 {
+        font-size: 48px !important
+    }
+    .content__social li a {
+        font-size: 12px !important
+    }
+}
+
+@media(max-width:350px) {
+    .content__title h1 {
+        font-size: 36px !important
+    }
+    .content__social li a {
+        font-size: 8px !important
+    }
+}
